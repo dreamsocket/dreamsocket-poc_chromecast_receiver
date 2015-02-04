@@ -1,9 +1,16 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
+
+<!-- saved from url=(0041)http://www.bit-101.com/cast/receiver.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <title>Example minimum receiver</title>
+  <script src="./receiver_files/cast_receiver.js"></script>
 </head>
 <body>
+  <video id="media">
+  <script>
+    window.mediaElement = document.getElementById('media');
+    window.mediaManager = new cast.receiver.MediaManager(window.mediaElement);
+    window.castReceiverManager = cast.receiver.CastReceiverManager.getInstance();
+    window.castReceiverManager.start();
+  </script>
 
-</body>
-</html>
+</video></body></html>
